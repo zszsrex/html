@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>输入文字</title>
+</head>
+<body>
+<textarea id="text"cols="30" rows="20">请在此输入文字</textarea>
+<form >
+<input type="button"value="提交"onclick="mainClick()"/>
+</form>
+<script language="javascript">
+function isOk()
+{
+return confirm("是否确认提交数据？点击[确认]提交，点击[取消]放弃");
+}
+function mainClick()
+{
+var isok=isOk();
+if (isok==true)
+{var text=document.getElementById("text").value;
+document.write(text);
+}
+}
+
+</script>
+</body>
+</html>
